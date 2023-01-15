@@ -3,8 +3,7 @@
 ; @date 15/01/2023
 ; @ide	MPLAB X IDE v6.00
 ; @file P1-Corrimiento_Leds
-; @brief Libreria para implementacion de retardos desde 10us hasta 250ms
-; @oscilador	El oscilador empleado es de 4Mhz
+; @brief  Corrimiento de leds pares e impares, uso de bot√≥n para detener o iniciar el corrimiento
 ;------------------------------------------------------------------
 PROCESSOR 18F57Q84
 #include "Bit_config.inc"  /config statements should precede project file includes./
@@ -23,16 +22,16 @@ w_presion:
     CLRF    LATC	    ;Se apagan los leds en C
     CLRF    LATE	    ;Se apagan los leds en E
     BTFSC   PORTA,3,0	    ;PORTA<3> = 0? - BUTTON PRESS?
-    GOTO    w_presion	    ;No funciona sino est· presionado el botÛn
+    GOTO    w_presion	    ;No funciona sino est√° presionado el bot√≥n
     GOTO    CORRIMIENTO       
 button:
-    BTFSC   PORTA,3,0	    ;Ver si el botÛn est· presionado
+    BTFSC   PORTA,3,0	    ;Ver si el bot√≥n est√° presionado
     RETURN
     CALL    Delay_50ms	    ;darle al usuario tiempo para dejar de presionar
     CALL    Delay_50ms
     GOTO    button2    
 button2:
-    BTFSC   PORTA,3,0	    ;Ver si el botÛn est· presionado
+    BTFSC   PORTA,3,0	    ;Ver si el bot√≥n est√° presionado
     goto    button2	    ;Regresa al 0
     RETURN
 CORRIMIENTO:
