@@ -9,9 +9,8 @@ Entorno MPLAB X IDE v6.00
 Lenguaje: AMS - C
 UNIVERSIDAD NACIONAL DE PIURA, PERU
 Contenido:
-Retardos:
 
-**retardos.inc:**
+**Retardos.inc:**
 Esta librería contiene las instrucciones necesarias para generar los siguientes retardos: 10us, 25us, 50us, 100us, 200us 250us, 500us, 1ms, 5ms, 10ms, 25ms, 50ms, 100ms, 200ms, 250ms. con un tiempo de oscilación de 4MHz.
 
 **P1-Corrimiento_Leds:**
