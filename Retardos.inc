@@ -214,11 +214,8 @@ Int_Loop_200ms:
     RETURN			    ;2Tcy
 
 ;Retardo=250ms,T = (4k)n+8n+6
-Delay_1s:
-    Call Delay_250ms
-    Call Delay_250ms
-    Call Delay_250ms
-    Call Delay_250ms
+    
+    
 Delay_250ms:		    ;2Tcy -- Call
     MOVLW   250		    ;1Tcy
     MOVWF   contador2,0	    ;1Tcy
