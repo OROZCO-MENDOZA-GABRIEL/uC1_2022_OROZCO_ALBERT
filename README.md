@@ -5,9 +5,13 @@
 **Orozco Mendoza Albert Gabriel**
 
 Tarjeta Curiosity Nano PIC18F57Q84
+
 Entorno MPLAB X IDE v6.00
+
 Lenguaje: AMS - C
+
 UNIVERSIDAD NACIONAL DE PIURA, PERU
+
 Contenido:
 
 **Retardos.inc:**
